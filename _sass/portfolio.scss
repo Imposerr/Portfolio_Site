@@ -1,0 +1,78 @@
+/* ----------------------------------------------------------------------------------------------------------
+Portfolio
+---------------------------------------------------------------------------------------------------------- */
+
+.transition {
+    height: 10%;
+}
+
+.comic-page{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* -----------------------------------------------------
+Illustrations
+----------------------------------------------------- */
+
+#Illustrations {
+    background-image: url("../images/NewYork.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comic-panels {
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: burlywood; */
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.tall-panel {
+    flex-basis: 40%;
+}
+
+.panel-column {
+    flex-basis: 55%;
+}
+
+.panel {
+    margin-bottom: -17.5%;
+}
+
+.second-panel {
+    position: relative;
+    margin-top: -40%;
+    width: 100%;
+}
+
+.third-panel {
+    position: relative;
+    margin-top: -40%;
+    width: 100%;
+}
+
+/* -----------------------------------------------------
+Design
+----------------------------------------------------- */
+
+#Design {
+    background-image: url("../images/Gotham.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+svg {
+    stroke: #000;
+    stroke-width: 0.5px;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    fill: black;
+}
