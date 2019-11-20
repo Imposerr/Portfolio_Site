@@ -12,3 +12,4 @@ collections:
 sass:
   style: compact
 
+permalink: /:categories/:title/
