@@ -19,8 +19,8 @@ Illustration - Desktop
                 <clipPath id="tallClip">
                         <rect x="5" y="0" width="87.5%" height="99.5%"></rect>
                 </clipPath>
-                {% if post.tags == "Portfolio1" %}
-                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+                {% if page.tags == "Portfolio1" %}
+                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ page.img }}" />
                 {% endif %}
             </svg>
         </div>
