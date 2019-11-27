@@ -5,7 +5,7 @@ url: "/Portfolio_Site"
 
 
 collections:
-  design:
+  posts:
     output: true
     permalink: /:collection/:path/
 
