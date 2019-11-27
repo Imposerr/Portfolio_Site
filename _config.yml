@@ -4,10 +4,10 @@ baseurl: "https://imposerr.github.io"
 url: "/Portfolio_Site"
 
 
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   posts:
+#     output: true
+#     permalink: /:collection/:path/
 
 sass:
   style: compact

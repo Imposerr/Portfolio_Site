@@ -10,7 +10,7 @@ Illustration - Desktop
 <div id="Portfolio"></div>
 <section id="Illustrations" class="comic-page">
     <h1>ILLUSTRATIONS</h1>
-    {{ % for posts in collections.posts %}}
+    {% for post in site.posts %}
     <div class="flex-container comic-panels">
         <div class="tall-panel desktop">
             <svg width="100%" height="97%"viewBox="4 -0.15 10 26.75">
@@ -19,22 +19,22 @@ Illustration - Desktop
                 <clipPath id="tallClip">
                         <rect x="5" y="0" width="87.5%" height="99.5%"></rect>
                 </clipPath>
-                {{% if posts.tags == "Portfolio1" %}}
-                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ posts.img }}" />
-                {{% endif %}}
+                {% if post.tags == "Portfolio1" %}
+                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+                {% endif %}
             </svg>
         </div>
 
-        <div class="panel-column desktop">
+        <!-- <div class="panel-column desktop">
             <div class="panel first-panel">git
                 <svg width="100%" viewBox="0 1.5 10 10">
                     <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     <clipPath id="myClip">
                         <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     </clipPath>
-                {{% if posts.tags == "Portfolio2" %}}
-                <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ posts.img }}" />
-                {{% endif %}}
+                    {% if posts.tags == "Portfolio2" %}}
+                    <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ posts.img }}" />
+                    {{% endif %}}
                 </svg>
             </div>
 
@@ -59,7 +59,7 @@ Illustration - Desktop
                     <image clip-path="url(#Clip3)" height="13" width="10" xlink:href="{{ site.url }}/assets/images/Buble.png" />
                 </svg>
             </div>
-        </div>
+        </div> -->
 
 <!-- ----------------------------------------------------------------------------------------------------------
 Illustration - Mobile
