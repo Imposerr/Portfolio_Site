@@ -20,20 +20,20 @@ Illustration - Desktop
                         <rect x="5" y="0" width="87.5%" height="99.5%"></rect>
                 </clipPath>
                 {{% if posts.tags == "Portfolio1" %}}
-                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ posts.img }}" />
+                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ page.img }}" />
                 {{% endif %}}
             </svg>
         </div>
 
         <div class="panel-column desktop">
-            <div class="panel first-panel">
+            <div class="panel first-panel">git
                 <svg width="100%" viewBox="0 1.5 10 10">
                     <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     <clipPath id="myClip">
                         <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     </clipPath>
                 {{% if posts.tags == "Portfolio2" %}}
-                <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ posts.img }}" />
+                <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ page.img }}" />
                 {{% endif %}}
                 </svg>
             </div>
@@ -45,7 +45,7 @@ Illustration - Desktop
                             <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
                     </clipPath>
                     {{% if posts.tags == "Portfolio3" %}}
-                    <image clip-path="url(#Clip2)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ posts.img }}" />
+                    <image clip-path="url(#Clip2)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ page.img }}" />
                     {{% endif %}}
                 </svg>
             </div>
