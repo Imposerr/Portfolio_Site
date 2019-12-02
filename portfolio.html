@@ -21,10 +21,10 @@ Illustration - Desktop
                 <clipPath id="tallClip">
                         <rect x="5" y="0" width="87.5%" height="99.5%"></rect>
                 </clipPath>
-                {% if post.tags contains "por" or "POR" %}
+                {% if post.tags contains "por" %}
 
                 <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
-                
+
                 {% endif %}
             </svg>
         </div>
