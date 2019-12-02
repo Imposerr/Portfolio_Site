@@ -26,9 +26,10 @@ Illustration - Desktop
             </svg>
         </div>
         {% endif %}
+        {% endfor %}
         
         <div class="panel-column desktop">
-
+            {% for post in site.posts %}
             {% if post.tags contains "trip" %}
             <div class="panel first-panel">
                 <svg width="100%" viewBox="0 1.5 10 10">
@@ -64,10 +65,8 @@ Illustration - Desktop
                 </svg>
             </div>
             {% endif %}
-
+            {% endfor %}
         </div>
-
-        {% endfor %}
 <!-- ----------------------------------------------------------------------------------------------------------
 Illustration - Mobile
 ---------------------------------------------------------------------------------------------------------- -->
