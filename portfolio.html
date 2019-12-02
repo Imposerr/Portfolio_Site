@@ -30,14 +30,14 @@ Illustration - Desktop
         
         <div class="panel-column desktop">
             {% for post in site.posts %}
-            {% if post.tags contains "trop" %}
-            <div class="panel third-panel">
-                <svg width="100%" viewBox="0 0 10 10">
-                    <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
-                    <clipPath id="Clip3">
-                            <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
+            {% if post.tags contains "and" %}
+            <div class="panel first-panel">
+                <svg width="100%" viewBox="0 1.5 10 10">
+                    <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
+                    <clipPath id="myClip">
+                        <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     </clipPath>
-                    <image clip-path="url(#Clip3)" height="13" width="10" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+                    <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
             {% endif %}
@@ -54,14 +54,14 @@ Illustration - Desktop
             </div>
             {% endif %}
 
-            {% if post.tags contains "and" %}
-            <div class="panel first-panel">
-                <svg width="100%" viewBox="0 1.5 10 10">
-                    <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
-                    <clipPath id="myClip">
-                        <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
+            {% if post.tags contains "trop" %}
+            <div class="panel third-panel">
+                <svg width="100%" viewBox="0 0 10 10">
+                    <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
+                    <clipPath id="Clip3">
+                            <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
                     </clipPath>
-                    <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+                    <image clip-path="url(#Clip3)" height="13" width="10" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
             {% endif %}
