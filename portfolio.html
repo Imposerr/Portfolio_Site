@@ -15,18 +15,18 @@ Illustration - Desktop
         {% for post in site.posts %}
 
         <div class="tall-panel desktop">
-            {% if post.tags contains "por" or "POR" %}
-
             <svg width="100%" height="97%"viewBox="4 -0.15 10 26.75">
                 <rect x="5" y="0" width="90%" height="100%"></rect>
 
                 <clipPath id="tallClip">
                         <rect x="5" y="0" width="87.5%" height="99.5%"></rect>
                 </clipPath>
-                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
-            </svg>
+                {% if post.tags contains "por" or "POR" %}
 
-            {% endif %}
+                <image clip-path="url(#tallClip)" height="30" width=28 xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+                
+                {% endif %}
+            </svg>
         </div>
 
         {% endfor %}
