@@ -29,7 +29,6 @@ Main Page - Desktop
         <polygon points="6.35 0.6, 9.4 0.6, 9.4 4.9, 4.85 4.9"></polygon>
     </clipPath>
     {% for post in site.posts %}
-
     {% if post.tags contains "ultra" %}
     <image clip-path="url(#landingClip1)" height="11" width="8" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
     {% endif %}
@@ -37,7 +36,8 @@ Main Page - Desktop
     {% if post.tags contains "wolv" %}
     <image clip-path="url(#landingClip2)" height="10" width="15" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
     {% endif %}
-
+    {% endfor %}
+    
     </svg>
 
     <div id="About " class="Text info1 desk">
