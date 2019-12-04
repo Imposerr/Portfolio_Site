@@ -28,8 +28,16 @@ Main Page - Desktop
     <clipPath id="landingClip2">
         <polygon points="6.35 0.6, 9.4 0.6, 9.4 4.9, 4.85 4.9"></polygon>
     </clipPath>
-    <image clip-path="url(#landingClip1)" height="11" width="8" xlink:href="{{ site.url }}/assets/images/Ultraman.jpg" />
-    <image clip-path="url(#landingClip2)" height="10" width="15" xlink:href="{{ site.url }}/assets/images/Wolverine.png" />
+    {% for post in site.posts %}
+
+    {% if post.tags contains "ultra" %}
+    <image clip-path="url(#landingClip1)" height="11" width="8" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+    {% endif %}
+
+    {% if post.tags contains "wolv" %}
+    <image clip-path="url(#landingClip2)" height="10" width="15" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
+    {% endif %}
+
     </svg>
 
     <div id="About " class="Text info1 desk">

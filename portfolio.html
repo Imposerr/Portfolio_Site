@@ -13,8 +13,7 @@ Illustration - Desktop
     
    <div class="flex-container comic-panels">
         {% for post in site.posts %}
-        {% if post.tags contains "por" %}
-
+        {% if post.tags contains "ultra" %}
         <div class="tall-panel desktop">
             <svg width="100%" height="97%"viewBox="4 -0.15 10 26.75">
                 <rect x="5" y="0" width="90%" height="100%"></rect>
@@ -31,7 +30,7 @@ Illustration - Desktop
         <div class="panel-column desktop">
             {% for post in site.posts %}
 
-            {% if post.tags contains "and" %}
+            {% if post.tags contains "wolv" %}
             <div class="panel first-panel">
                 <svg width="100%" viewBox="0 1.5 10 10">
                     <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
@@ -43,7 +42,7 @@ Illustration - Desktop
             </div>
             {% endif %}
 
-            {% if post.tags contains "trap" %}
+            {% if post.tags contains "death" %}
             <div class="panel second-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
@@ -55,7 +54,7 @@ Illustration - Desktop
             </div>
             {% endif %}
 
-            {% if post.tags contains "trop" %}
+            {% if post.tags contains "buble" %}
             <div class="panel third-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
@@ -71,7 +70,8 @@ Illustration - Desktop
 <!-- ----------------------------------------------------------------------------------------------------------
 Illustration - Mobile
 ---------------------------------------------------------------------------------------------------------- -->
-
+        {% for post in site.posts %}
+        {% if post.tags contains "ultra" %}
         <div class="tall-panel mobile">
             <svg width="100%" height="97%"viewBox="4 -0.25 10 20">
                 <rect x="4.5" y="0" width="90%" height="100%"></rect>
@@ -81,8 +81,12 @@ Illustration - Mobile
                 <image clip-path="url(#tallClipM)" height="25" width="25" xlink:href="{{ site.url }}/assets/images/Ultraman.jpg" />
             </svg>
         </div>
+        {% endif %}
+        {% endfor %}
 
         <div class="panel-column mobile">
+            {% for post in site.posts %}
+            {% if post.tags contains "wolv" %}
             <div class="panel first-panel">
                 <svg width="100%" viewBox="0 1.5 10 10">
                     <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
@@ -92,7 +96,9 @@ Illustration - Mobile
                     <image clip-path="url(#myClip)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/Wolverine.png" />
                 </svg>
             </div>
+            {% endif %}
 
+            {% if post.tags contains "death" %}
             <div class="panel second-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
@@ -102,7 +108,9 @@ Illustration - Mobile
                     <image clip-path="url(#Clip2)" height="12" width="10" xlink:href="{{ site.url }}/assets/images/Death.png" />
                 </svg>
             </div>
+            {% endif %}
 
+            {% if post.tags contains "buble" %}
             <div class="panel third-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
@@ -112,6 +120,8 @@ Illustration - Mobile
                     <image clip-path="url(#Clip3)" height="13" width="10" xlink:href="{{ site.url }}/assets/images/Buble.png" />
                 </svg>
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -126,92 +136,115 @@ Design - Desktop
     <h1>DESIGN</h1>
     <div class="flex-container comic-panels">
         <div class="panel-column desktop">
+            {% for post in site.posts %}
+            {% if post.tags contains "orange" %}
             <div class="panel first-panel">
                 <svg width="100%" viewBox="0 1.5 10 10">
                     <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     <clipPath id="myClip">
                         <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     </clipPath>
-                    <image clip-path="url(#myClip)" height="10" width="19" xlink:href="{{ site.url }}/assets/images/Orange.png" />
+                    <image clip-path="url(#myClip)" height="10" width="19" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
+            {% endif %}
 
+            {% if post.tags contains "vako" %}
             <div class="panel second-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
                     <clipPath id="Clip2">
                         <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
                     </clipPath>
-                    <image clip-path="url(#Clip2)" height="9" width="11" xlink:href="{{ site.url }}/assets/images/Vako.png" />
+                    <image clip-path="url(#Clip2)" height="9" width="11" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
+            {% endif %}
 
+            {% if post.tags contains "toy" %}
             <div class="panel third-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
                     <clipPath id="Clip3">
                         <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
                     </clipPath>
-                    <image clip-path="url(#Clip3)" height="9" width="10" xlink:href="{{ site.url }}/assets/images/Toy.png" />
+                    <image clip-path="url(#Clip3)" height="9" width="10" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
 
+        {% for post in site.posts %}
+        {% if post.tags contains "movie" %}
         <div class="tall-panel desktop">
             <svg width="100%" height="97%"viewBox="4.75 -0.15 10 26.75">
                 <rect x="5" y="0" width="90%" height="100%"></rect>
                 <clipPath id="tallClip2">
                     <rect x="5" y="0" width="90%" height="100%"></rect>
                 </clipPath>
-                <image clip-path="url(#tallClip2)" height="27" width="19" xlink:href="{{ site.url }}/assets/images/Movie.png" />
+                <image clip-path="url(#tallClip2)" height="27" width="19" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
             </svg>
         </div>
-
+        {% endif %}
+        {% endfor %}
 <!-- ----------------------------------------------------------------------------------------------------------
 Design - Mobile
 ---------------------------------------------------------------------------------------------------------- -->
 
         <div class="panel-column mobile">
+            {% for post in site.posts %}
+            {% if post.tags contains "orange" %}
             <div class="panel first-panel">
                 <svg width="100%" viewBox="0 1.5 10 10">
                     <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     <clipPath id="myClip">
                         <polygon points="0.5 2, 9.5 2, 9.5 9, 0.5, 7"/>
                     </clipPath>
-                    <image clip-path="url(#myClip)" height="10" width="19" xlink:href="{{ site.url }}/assets/images/Orange.png" />
+                    <image clip-path="url(#myClip)" height="10" width="19" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
+            {% endif %}
 
+            {% if post.tags contains "vako" %}
             <div class="panel second-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
                     <clipPath id="Clip2">
                         <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 5.5"/>
                     </clipPath>
-                    <image clip-path="url(#Clip2)" height="9" width="11" xlink:href="{{ site.url }}/assets/images/Vako.png" />
+                    <image clip-path="url(#Clip2)" height="9" width="11" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
+            {% endif %}
 
+            {% if post.tags contains "toy" %}
             <div class="panel third-panel">
                 <svg width="100%" viewBox="0 0 10 10">
                     <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
                     <clipPath id="Clip3">
                         <polygon points="0.5 0.5, 9.5 2.5, 9.5 7.5, 0.5, 7.5"/>
                     </clipPath>
-                    <image clip-path="url(#Clip3)" height="9" width="10" xlink:href="{{ site.url }}/assets/images/Toy.png" />
+                    <image clip-path="url(#Clip3)" height="9" width="10" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
                 </svg>
             </div>
+            {% endif %}
+            {% endfor %}
         </div>
 
+        {% for post in site.posts %}
+        {% if post.tags contains "movie" %}
         <div class="tall-panel mobile">
             <svg width="100%" height="97%"viewBox="4.6 -0.15 10 20">
                 <rect x="5" y="0" width="92%" height="100%"></rect>
                 <clipPath id="tallClip2M">
                     <rect x="5" y="0" width="92%" height="97.5%"></rect>
                 </clipPath>
-                <image clip-path="url(#tallClip2M)" height="25" width="19" xlink:href="{{ site.url }}/assets/images/Movie.png" />
+                <image clip-path="url(#tallClip2M)" height="25" width="19" xlink:href="{{ site.url }}/assets/images/{{ post.img }}" />
             </svg>
         </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </section>
 </body>
