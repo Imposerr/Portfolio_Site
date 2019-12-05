@@ -16,7 +16,7 @@ Illustrations
 ----------------------------------------------------- */
 
 #Illustrations {
-    background-image: url("{{ site.url }}/assets/images/NewYork.jpg");
+    background-image: url("../images/NewYork.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ Design
 ----------------------------------------------------- */
 
 #Design {
-    background-image: url("{{ site.url }}/assets/images/Gotham.jpg");
+    background-image: url("../images/Gotham.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
